@@ -2,8 +2,10 @@
 
 - create react app
 - configured Tailwind CSS
+- Header
+- Login Form
 
-# Features
+## Features
 
 - Login/Sign Up (Get started page)
   - Sign In/Sign Up Form
@@ -21,3 +23,4 @@
 - NetflixGPT
   - search bar
   - movie suggestions
+  
