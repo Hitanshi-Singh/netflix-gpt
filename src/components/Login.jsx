@@ -10,6 +10,7 @@ import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const dispatch=useDispatch();
@@ -40,7 +41,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://4kwallpapers.com/images/wallpapers/beautiful-woman-ai-art-2732x2732-11247.jpg",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               // Profile updated!
