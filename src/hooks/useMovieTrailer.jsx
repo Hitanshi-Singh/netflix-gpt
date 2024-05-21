@@ -20,7 +20,7 @@ const useMovieTrailer = (movieId) => {
     });
 
     const trailer = filteredData.length ? filteredData[0] : json.results[0];
-    console.log(trailer);
+    // console.log(trailer);
     dispatch(addTrailerVideo(trailer));
   };
   useEffect(() => {

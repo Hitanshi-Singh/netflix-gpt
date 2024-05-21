@@ -46,7 +46,7 @@ const Header = () => {
     return ()=>unsubscribe();
   }, []);
   return (
-    <div className="fixed w-screen py-3 bg-gradient-to-b from-black px-5 z-10 flex justify-between items-center">
+    <div className="fixed w-screen py-3 bg-gradient-to-b from-black px-5 z-20 flex justify-between items-center">
       <img
         className="w-44"
         src={LOGO}
