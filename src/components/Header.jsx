@@ -54,7 +54,7 @@ const Header = () => {
     dispatch(changeLanguage(e.target.value));
   };
   return (
-    <div className="fixed w-screen py-3 bg-gradient-to-b from-black px-5 z-20 flex justify-between items-center">
+    <div className="fixed w-screen py-3 bg-gradient-to-b from-black px-5 z-20 flex flex-col md:flex-row justify-between items-center bg-black sm:bg-amber-300 md:bg-green-900">
       <img className="w-44" src={LOGO} alt="logo" />
       {user && (
         <div className="flex w-96 justify-around">
@@ -76,7 +76,7 @@ const Header = () => {
             className="w-32 bg-indigo-900 text-white rounded-lg"
             onClick={handleGPTButton}
           >
-            {showGptSearch?"Homepage":"GPT Search"}
+            {showGptSearch ? "Homepage" : "GPT Search"}
           </button>
           <div className="flex w-40 justify-evenly">
             <img
